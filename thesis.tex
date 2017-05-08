@@ -122,6 +122,10 @@ MulVAL本身作为一个开源项目被公布给世界范围内的研究者和�
 对于一个组织网络来说， 其最主要的分析工作就是各项安全指标的度量，这项工作使得我们能够回答“今天的网络是否比昨天更加安全？”这样一个问题。
 \paragraph{}
 基于攻击图的度量标准十分复杂多样，目前并没有一个完全的、可信的度量标准，同时许多直观上感觉较为可信的度量标准也经常容易被人们不断推翻。但总的来说，具有代表性的标准有这样一些：
+
+\subparagraph{K-Zero metric} 至少需要多少个零日漏洞才能够完成对组织中至少一台重要资产的攻击，由于使用的是零日漏洞进行评测，所以其主要用于衡量整个组织“网络架构”的安全性。
+\subparagraph{Attack possibility metric} 组织内重要资产遭受攻击的可能性，这个指标是基于动态贝叶斯网络进行计算的， 将整个攻击图以及对于每个原子攻击的概率表一起构成一个贝叶斯网络，从而进行计算。
+\subparagraph{Attackbility metric} 攻击性指标，这个指标是基于当前存在的攻击路径数量与潜在的攻击路径数量的比值计算的，由于比值将组织“网络架构”的作用约去了，所以主要是用来衡量整个网络中脆弱性对整体安全状况的影响程度。
 \subparagraph{Network compromise percentage\cite{27}}网络中有多少主机可以被攻击者获取用户或管理员权限（考虑资产价值）
 \subparagraph{Weakest adversary security metric\cite{28}}最弱对手：攻击者至少需要多少前置条件才可以完成攻击
 \subparagraph{Shortest path metric / number of paths metric / and mean of path lengths metric\cite{29}} 最短攻击路径 / 攻击路径数量 / 攻击路径平均长度
